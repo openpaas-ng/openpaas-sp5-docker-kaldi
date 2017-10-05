@@ -14,8 +14,7 @@ do
 				# we do not install those
 				;;
 				"extras/install_sacc.sh")
-						# this one returns a 1 on a successful install for some reason...
-						sh "$file"
+						sh "$file" || exit 1
 						;;
 				"extras/install_mikolov_rnnlm.sh")
 						sh "$file" rnnlm-0.3e || exit 1
