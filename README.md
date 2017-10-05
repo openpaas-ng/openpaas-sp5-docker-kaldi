@@ -26,3 +26,4 @@ For convenience, the following environment variables are set:
 - [flac](https://xiph.org/flac/)
 - [graphviz](http://graphviz.org/)
 - [num2words](https://github.com/savoirfairelinux/num2words)
+- [jupyter notebook + bash kernel](http://jupyter.org/)
