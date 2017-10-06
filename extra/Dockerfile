@@ -20,8 +20,7 @@ RUN sh ./install_kaldi_extras.sh
 # install faster_rnnlm with patch
 WORKDIR ${KALDI_BASE}/tools
 RUN git clone --depth=1 https://github.com/yandex/faster-rnnlm.git
-COPY faster-rnnlm.patch ./faster-rnnlm/faster-rnnlm/faster-rnnlm.patch
-RUN cd faster-rnnlm/faster-rnnlm && patch -i faster-rnnlm.patch &&\
+RUN cd faster-rnnlm/faster-rnnlm &&\
     make && cd .. && ln -sf faster-rnnlm/rnnlm
 
 # install additional LM tools
